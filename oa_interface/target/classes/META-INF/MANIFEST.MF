@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: oa_interface
+Implementation-Version: 1.1.1
+Built-By: 92123
+Implementation-Vendor-Id: com.friends
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/oa_interface
+ /
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
