@@ -1,0 +1,3 @@
+2018-07-01 16:39:11.850 WARN  org.hibernate.id.UUIDHexGenerator Line:42  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2018-07-01 20:15:20.879 WARN  org.hibernate.id.UUIDHexGenerator Line:42  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2018-07-01 20:27:48.235 WARN  org.hibernate.id.UUIDHexGenerator Line:42  - HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead

@@ -1,0 +1,210 @@
+html {
+	color: #000;
+	background: #FFF;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+li {
+	list-style: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+q:before,
+q:after {
+	content: '';
+}
+
+abbr,
+acronym {
+	border: 0;
+	font-variant: normal;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+input,
+textarea,
+select {
+	*font-size: 100%;
+}
+
+legend {
+	color: #000;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.top {
+	width: 100%;
+	height: auto;
+}
+
+.pp1 {}
+
+.free_fit {
+	position: relative;
+	height: 30px;
+}
+
+.tit {
+	width: 180px;
+	height: 30px;
+	text-align: center;
+	color: #616161;
+	font-weight: 700;
+	background: white;
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	margin-left: -90px;
+	line-height: 30px;
+}
+
+.tit-bg {
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	z-index: 1;
+	top: 14px;
+	background: #ccc;
+}
+
+.zhanwei {
+	width: 100%;
+	height: 20px;
+	background: yellow;
+	text-align: center;
+}
+
+ul#navlist li span {
+	background: #FBFBFB;
+}
+
+ul#navlist li {
+	float: left;
+	height: 30px;
+	border: 0px solid #6c6;
+	width: 100%;
+}
+
+ul#navlist .list1 {
+	border-bottom: 1px solid #CCCCCC;
+	width: 100%;
+	margin-bottom: -15px;
+}
+
+#navlist b {
+	display: block;
+	color: #666;
+	text-decoration: none;
+	padding-left: 5%;
+	width: 95%;
+	padding-top: 2px;
+}
+.t-1{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+}
+.t-1 p{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.t-2{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	
+}
+.t-2 p{
+	float: left;
+	width: 50%;
+	text-align: center;
+}

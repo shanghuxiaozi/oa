@@ -1,0 +1,606 @@
+2018-07-01 16:40:50.955 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_, sysuser0_.address as address2_26_, sysuser0_.attent_count as attent_c3_26_, sysuser0_.birthday as birthday4_26_, sysuser0_.create_date as create_d5_26_, sysuser0_.email as email6_26_, sysuser0_.fan_count as fan_coun7_26_, sysuser0_.grade as grade8_26_, sysuser0_.group_count as group_co9_26_, sysuser0_.image as image10_26_, sysuser0_.introduce as introdu11_26_, sysuser0_.labour_union_id as labour_12_26_, sysuser0_.locked as locked13_26_, sysuser0_.nickname as nicknam14_26_, sysuser0_.password as passwor15_26_, sysuser0_.phone as phone16_26_, sysuser0_.points as points17_26_, sysuser0_.pre_login_date as pre_log18_26_, sysuser0_.real_name as real_na19_26_, sysuser0_.salt as salt20_26_, sysuser0_.sex as sex21_26_, sysuser0_.update_date as update_22_26_, sysuser0_.user_name as user_na23_26_ from sys_user sysuser0_ where sysuser0_.user_name=?
+2018-07-01 16:40:51.150 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.373 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.420 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.468 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.513 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.577 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.621 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.666 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.709 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.753 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.799 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.843 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.889 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:51.934 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:40:52.631 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_, sysrole0_.create_date as create_d2_24_, sysrole0_.description as descript3_24_, sysrole0_.name as name4_24_, sysrole0_.order_num as order_nu5_24_, sysrole0_.update_date as update_d6_24_ from sys_role sysrole0_
+2018-07-01 16:40:52.716 DEBUG org.hibernate.SQL Line:92  - select syspermiss0_.id as id1_23_, syspermiss0_.available as availabl2_23_, syspermiss0_.icon_code as icon_cod3_23_, syspermiss0_.is_parent as is_paren4_23_, syspermiss0_.name as name5_23_, syspermiss0_.open as open6_23_, syspermiss0_.order_num as order_nu7_23_, syspermiss0_.permission_name as permissi8_23_, syspermiss0_.permission_value as permissi9_23_, syspermiss0_.pid as pid10_23_, syspermiss0_.pname as pname11_23_, syspermiss0_.type as type12_23_, syspermiss0_.url as url13_23_ from sys_permission syspermiss0_
+2018-07-01 16:41:22.656 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_role t where 1=1  order by order_num asc limit ?, ? 
+2018-07-01 16:41:22.672 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_role t where 1=1  order by order_num asc 
+2018-07-01 16:41:26.479 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 16:41:27.095 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where 1=1 order by order_num ASC 
+2018-07-01 16:41:27.347 DEBUG org.hibernate.SQL Line:92  - select * from sys_role_permission s where s.role_id=? 
+2018-07-01 16:41:31.631 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 16:41:31.804 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where 1=1 order by order_num ASC 
+2018-07-01 16:41:31.930 DEBUG org.hibernate.SQL Line:92  - select * from sys_role_permission s where s.role_id=? 
+2018-07-01 16:41:34.831 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_user t where 1=1  and t.user_name like ?  limit ?, ? 
+2018-07-01 16:41:34.846 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_user t where 1=1  and t.user_name like ? 
+2018-07-01 16:41:58.301 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_, sysuser0_.address as address2_26_, sysuser0_.attent_count as attent_c3_26_, sysuser0_.birthday as birthday4_26_, sysuser0_.create_date as create_d5_26_, sysuser0_.email as email6_26_, sysuser0_.fan_count as fan_coun7_26_, sysuser0_.grade as grade8_26_, sysuser0_.group_count as group_co9_26_, sysuser0_.image as image10_26_, sysuser0_.introduce as introdu11_26_, sysuser0_.labour_union_id as labour_12_26_, sysuser0_.locked as locked13_26_, sysuser0_.nickname as nicknam14_26_, sysuser0_.password as passwor15_26_, sysuser0_.phone as phone16_26_, sysuser0_.points as points17_26_, sysuser0_.pre_login_date as pre_log18_26_, sysuser0_.real_name as real_na19_26_, sysuser0_.salt as salt20_26_, sysuser0_.sex as sex21_26_, sysuser0_.update_date as update_22_26_, sysuser0_.user_name as user_na23_26_ from sys_user sysuser0_ where sysuser0_.user_name=?
+2018-07-01 16:41:58.363 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.410 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.456 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.500 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.556 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.600 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.663 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.703 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.759 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.804 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.849 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.893 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.936 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:58.981 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:41:59.039 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 16:41:59.105 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 16:42:10.597 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_user t where 1=1  and t.user_name like ?  limit ?, ? 
+2018-07-01 16:42:10.621 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_user t where 1=1  and t.user_name like ? 
+2018-07-01 16:42:15.682 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_0_, sysuser0_.address as address2_26_0_, sysuser0_.attent_count as attent_c3_26_0_, sysuser0_.birthday as birthday4_26_0_, sysuser0_.create_date as create_d5_26_0_, sysuser0_.email as email6_26_0_, sysuser0_.fan_count as fan_coun7_26_0_, sysuser0_.grade as grade8_26_0_, sysuser0_.group_count as group_co9_26_0_, sysuser0_.image as image10_26_0_, sysuser0_.introduce as introdu11_26_0_, sysuser0_.labour_union_id as labour_12_26_0_, sysuser0_.locked as locked13_26_0_, sysuser0_.nickname as nicknam14_26_0_, sysuser0_.password as passwor15_26_0_, sysuser0_.phone as phone16_26_0_, sysuser0_.points as points17_26_0_, sysuser0_.pre_login_date as pre_log18_26_0_, sysuser0_.real_name as real_na19_26_0_, sysuser0_.salt as salt20_26_0_, sysuser0_.sex as sex21_26_0_, sysuser0_.update_date as update_22_26_0_, sysuser0_.user_name as user_na23_26_0_ from sys_user sysuser0_ where sysuser0_.id=?
+2018-07-01 16:42:15.757 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 16:42:15.863 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_, sysrole0_.create_date as create_d2_24_, sysrole0_.description as descript3_24_, sysrole0_.name as name4_24_, sysrole0_.order_num as order_nu5_24_, sysrole0_.update_date as update_d6_24_ from sys_role sysrole0_ where 1=1
+2018-07-01 16:42:28.566 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_role t where 1=1  order by order_num asc limit ?, ? 
+2018-07-01 16:42:28.599 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_role t where 1=1  order by order_num asc 
+2018-07-01 16:42:30.003 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 16:42:30.158 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where 1=1 order by order_num ASC 
+2018-07-01 16:42:30.262 DEBUG org.hibernate.SQL Line:92  - select * from sys_role_permission s where s.role_id=? 
+2018-07-01 16:42:34.978 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 16:42:35.129 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where 1=1 order by order_num ASC 
+2018-07-01 16:42:35.254 DEBUG org.hibernate.SQL Line:92  - select * from sys_role_permission s where s.role_id=? 
+2018-07-01 16:42:44.452 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 16:42:44.570 DEBUG org.hibernate.SQL Line:92  - update sys_role set create_date=?, description=?, name=?, order_num=?, update_date=? where id=?
+2018-07-01 16:42:44.664 DEBUG org.hibernate.SQL Line:92  - select sysroleper0_.id as id1_25_, sysroleper0_.permission_id as permissi2_25_, sysroleper0_.role_id as role_id3_25_ from sys_role_permission sysroleper0_ where sysroleper0_.role_id=?
+2018-07-01 16:42:44.762 DEBUG org.hibernate.SQL Line:92  - delete from sys_role_permission where id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=?
+2018-07-01 16:42:44.835 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:44.851 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:44.871 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:44.885 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:44.901 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:44.919 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:44.933 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:44.947 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:44.962 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:44.975 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:44.991 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:45.004 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:45.018 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:42:45.073 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_role t where 1=1  order by order_num asc limit ?, ? 
+2018-07-01 16:42:45.086 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_role t where 1=1  order by order_num asc 
+2018-07-01 16:42:47.403 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_user t where 1=1  and t.user_name like ?  limit ?, ? 
+2018-07-01 16:42:47.418 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_user t where 1=1  and t.user_name like ? 
+2018-07-01 16:42:48.910 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_0_, sysuser0_.address as address2_26_0_, sysuser0_.attent_count as attent_c3_26_0_, sysuser0_.birthday as birthday4_26_0_, sysuser0_.create_date as create_d5_26_0_, sysuser0_.email as email6_26_0_, sysuser0_.fan_count as fan_coun7_26_0_, sysuser0_.grade as grade8_26_0_, sysuser0_.group_count as group_co9_26_0_, sysuser0_.image as image10_26_0_, sysuser0_.introduce as introdu11_26_0_, sysuser0_.labour_union_id as labour_12_26_0_, sysuser0_.locked as locked13_26_0_, sysuser0_.nickname as nicknam14_26_0_, sysuser0_.password as passwor15_26_0_, sysuser0_.phone as phone16_26_0_, sysuser0_.points as points17_26_0_, sysuser0_.pre_login_date as pre_log18_26_0_, sysuser0_.real_name as real_na19_26_0_, sysuser0_.salt as salt20_26_0_, sysuser0_.sex as sex21_26_0_, sysuser0_.update_date as update_22_26_0_, sysuser0_.user_name as user_na23_26_0_ from sys_user sysuser0_ where sysuser0_.id=?
+2018-07-01 16:42:49.004 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 16:42:49.060 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_, sysrole0_.create_date as create_d2_24_, sysrole0_.description as descript3_24_, sysrole0_.name as name4_24_, sysrole0_.order_num as order_nu5_24_, sysrole0_.update_date as update_d6_24_ from sys_role sysrole0_ where 1=1
+2018-07-01 16:42:51.807 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_0_, sysuser0_.address as address2_26_0_, sysuser0_.attent_count as attent_c3_26_0_, sysuser0_.birthday as birthday4_26_0_, sysuser0_.create_date as create_d5_26_0_, sysuser0_.email as email6_26_0_, sysuser0_.fan_count as fan_coun7_26_0_, sysuser0_.grade as grade8_26_0_, sysuser0_.group_count as group_co9_26_0_, sysuser0_.image as image10_26_0_, sysuser0_.introduce as introdu11_26_0_, sysuser0_.labour_union_id as labour_12_26_0_, sysuser0_.locked as locked13_26_0_, sysuser0_.nickname as nicknam14_26_0_, sysuser0_.password as passwor15_26_0_, sysuser0_.phone as phone16_26_0_, sysuser0_.points as points17_26_0_, sysuser0_.pre_login_date as pre_log18_26_0_, sysuser0_.real_name as real_na19_26_0_, sysuser0_.salt as salt20_26_0_, sysuser0_.sex as sex21_26_0_, sysuser0_.update_date as update_22_26_0_, sysuser0_.user_name as user_na23_26_0_ from sys_user sysuser0_ where sysuser0_.id=?
+2018-07-01 16:42:51.896 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 16:42:51.951 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_, sysrole0_.create_date as create_d2_24_, sysrole0_.description as descript3_24_, sysrole0_.name as name4_24_, sysrole0_.order_num as order_nu5_24_, sysrole0_.update_date as update_d6_24_ from sys_role sysrole0_ where 1=1
+2018-07-01 16:43:21.242 DEBUG org.hibernate.SQL Line:92  -  select distinct t.id,t.create_time,t.huanxin_flag,t.name,t.nickname,t.openid,t.phone,t.sex,t.user_type,i.integral  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1  limit ?, ? 
+2018-07-01 16:43:21.293 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1 
+2018-07-01 16:43:30.314 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where p.type=? order by order_num ASC 
+2018-07-01 16:43:31.048 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 16:43:31.064 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.type = 1
+2018-07-01 16:43:34.157 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 16:43:34.172 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.type = 1
+2018-07-01 16:43:38.466 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 16:43:38.479 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.type = 1
+2018-07-01 16:43:41.660 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.pid = '40288120643485df0164348ef8ea0002' and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 16:43:41.675 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.pid = '40288120643485df0164348ef8ea0002' and t.type = 1
+2018-07-01 16:43:53.968 DEBUG org.hibernate.SQL Line:92  -  select distinct t.id,t.create_time,t.huanxin_flag,t.name,t.nickname,t.openid,t.phone,t.sex,t.user_type,i.integral  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1  limit ?, ? 
+2018-07-01 16:43:54.010 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1 
+2018-07-01 16:44:01.182 DEBUG org.hibernate.SQL Line:92  -  select distinct t.id,t.create_time,t.huanxin_flag,t.name,t.nickname,t.openid,t.phone,t.sex,t.user_type,i.integral  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1  limit ?, ? 
+2018-07-01 16:44:01.228 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1 
+2018-07-01 16:44:21.183 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_activity_release t where 1=1 and is_delete = 0 and type= ?  order by t.time desc limit ?, ? 
+2018-07-01 16:44:21.201 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_activity_release t where 1=1 and is_delete = 0 and type= ? 
+2018-07-01 16:44:22.373 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_activity_release t where 1=1 and is_delete = 0 and type= ?  order by t.time desc limit ?, ? 
+2018-07-01 16:44:22.391 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_activity_release t where 1=1 and is_delete = 0 and type= ? 
+2018-07-01 16:44:23.523 DEBUG org.hibernate.SQL Line:92  -  select distinct t.id,t.create_time,t.huanxin_flag,t.name,t.nickname,t.openid,t.phone,t.sex,t.user_type,i.integral  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1  limit ?, ? 
+2018-07-01 16:44:23.567 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1 
+2018-07-01 16:44:25.066 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 16:44:25.082 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 16:47:36.998 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.047 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.095 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.138 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.180 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.223 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.268 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.313 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.356 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.398 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.448 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.493 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.539 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.588 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:47:37.657 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 16:47:37.702 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 16:48:38.803 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:38.848 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:38.892 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:38.937 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:39.007 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:39.056 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:39.100 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:39.145 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:39.187 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:39.255 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:39.303 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:39.345 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:39.390 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:39.435 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:49.614 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:49.680 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:49.723 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:49.768 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:49.814 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:49.866 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:49.914 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:49.958 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:50.006 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:50.050 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:50.099 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:50.143 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:50.187 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:48:50.233 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:04.783 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_, sysuser0_.address as address2_26_, sysuser0_.attent_count as attent_c3_26_, sysuser0_.birthday as birthday4_26_, sysuser0_.create_date as create_d5_26_, sysuser0_.email as email6_26_, sysuser0_.fan_count as fan_coun7_26_, sysuser0_.grade as grade8_26_, sysuser0_.group_count as group_co9_26_, sysuser0_.image as image10_26_, sysuser0_.introduce as introdu11_26_, sysuser0_.labour_union_id as labour_12_26_, sysuser0_.locked as locked13_26_, sysuser0_.nickname as nicknam14_26_, sysuser0_.password as passwor15_26_, sysuser0_.phone as phone16_26_, sysuser0_.points as points17_26_, sysuser0_.pre_login_date as pre_log18_26_, sysuser0_.real_name as real_na19_26_, sysuser0_.salt as salt20_26_, sysuser0_.sex as sex21_26_, sysuser0_.update_date as update_22_26_, sysuser0_.user_name as user_na23_26_ from sys_user sysuser0_ where sysuser0_.user_name=?
+2018-07-01 16:53:04.847 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:04.896 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:04.942 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:04.990 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:05.033 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:05.078 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:05.123 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:05.166 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:05.212 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:05.257 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:05.300 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:05.342 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:05.390 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:05.433 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 16:53:05.499 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 16:53:05.543 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 16:53:08.936 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_user t where 1=1  and t.user_name like ?  limit ?, ? 
+2018-07-01 16:53:08.949 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_user t where 1=1  and t.user_name like ? 
+2018-07-01 16:54:35.362 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_0_, sysuser0_.address as address2_26_0_, sysuser0_.attent_count as attent_c3_26_0_, sysuser0_.birthday as birthday4_26_0_, sysuser0_.create_date as create_d5_26_0_, sysuser0_.email as email6_26_0_, sysuser0_.fan_count as fan_coun7_26_0_, sysuser0_.grade as grade8_26_0_, sysuser0_.group_count as group_co9_26_0_, sysuser0_.image as image10_26_0_, sysuser0_.introduce as introdu11_26_0_, sysuser0_.labour_union_id as labour_12_26_0_, sysuser0_.locked as locked13_26_0_, sysuser0_.nickname as nicknam14_26_0_, sysuser0_.password as passwor15_26_0_, sysuser0_.phone as phone16_26_0_, sysuser0_.points as points17_26_0_, sysuser0_.pre_login_date as pre_log18_26_0_, sysuser0_.real_name as real_na19_26_0_, sysuser0_.salt as salt20_26_0_, sysuser0_.sex as sex21_26_0_, sysuser0_.update_date as update_22_26_0_, sysuser0_.user_name as user_na23_26_0_ from sys_user sysuser0_ where sysuser0_.id=?
+2018-07-01 16:54:35.439 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 16:54:35.497 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_, sysrole0_.create_date as create_d2_24_, sysrole0_.description as descript3_24_, sysrole0_.name as name4_24_, sysrole0_.order_num as order_nu5_24_, sysrole0_.update_date as update_d6_24_ from sys_role sysrole0_ where 1=1
+2018-07-01 16:54:48.868 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_0_, sysuser0_.address as address2_26_0_, sysuser0_.attent_count as attent_c3_26_0_, sysuser0_.birthday as birthday4_26_0_, sysuser0_.create_date as create_d5_26_0_, sysuser0_.email as email6_26_0_, sysuser0_.fan_count as fan_coun7_26_0_, sysuser0_.grade as grade8_26_0_, sysuser0_.group_count as group_co9_26_0_, sysuser0_.image as image10_26_0_, sysuser0_.introduce as introdu11_26_0_, sysuser0_.labour_union_id as labour_12_26_0_, sysuser0_.locked as locked13_26_0_, sysuser0_.nickname as nicknam14_26_0_, sysuser0_.password as passwor15_26_0_, sysuser0_.phone as phone16_26_0_, sysuser0_.points as points17_26_0_, sysuser0_.pre_login_date as pre_log18_26_0_, sysuser0_.real_name as real_na19_26_0_, sysuser0_.salt as salt20_26_0_, sysuser0_.sex as sex21_26_0_, sysuser0_.update_date as update_22_26_0_, sysuser0_.user_name as user_na23_26_0_ from sys_user sysuser0_ where sysuser0_.id=?
+2018-07-01 16:54:48.944 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 16:54:48.996 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_, sysrole0_.create_date as create_d2_24_, sysrole0_.description as descript3_24_, sysrole0_.name as name4_24_, sysrole0_.order_num as order_nu5_24_, sysrole0_.update_date as update_d6_24_ from sys_role sysrole0_ where 1=1
+2018-07-01 16:55:19.309 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_0_, sysuser0_.address as address2_26_0_, sysuser0_.attent_count as attent_c3_26_0_, sysuser0_.birthday as birthday4_26_0_, sysuser0_.create_date as create_d5_26_0_, sysuser0_.email as email6_26_0_, sysuser0_.fan_count as fan_coun7_26_0_, sysuser0_.grade as grade8_26_0_, sysuser0_.group_count as group_co9_26_0_, sysuser0_.image as image10_26_0_, sysuser0_.introduce as introdu11_26_0_, sysuser0_.labour_union_id as labour_12_26_0_, sysuser0_.locked as locked13_26_0_, sysuser0_.nickname as nicknam14_26_0_, sysuser0_.password as passwor15_26_0_, sysuser0_.phone as phone16_26_0_, sysuser0_.points as points17_26_0_, sysuser0_.pre_login_date as pre_log18_26_0_, sysuser0_.real_name as real_na19_26_0_, sysuser0_.salt as salt20_26_0_, sysuser0_.sex as sex21_26_0_, sysuser0_.update_date as update_22_26_0_, sysuser0_.user_name as user_na23_26_0_ from sys_user sysuser0_ where sysuser0_.id=?
+2018-07-01 16:55:19.388 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 16:55:19.448 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_, sysrole0_.create_date as create_d2_24_, sysrole0_.description as descript3_24_, sysrole0_.name as name4_24_, sysrole0_.order_num as order_nu5_24_, sysrole0_.update_date as update_d6_24_ from sys_role sysrole0_ where 1=1
+2018-07-01 16:58:43.057 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_role t where 1=1  order by order_num asc limit ?, ? 
+2018-07-01 16:58:43.072 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_role t where 1=1  order by order_num asc 
+2018-07-01 16:58:49.069 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 16:58:49.325 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where 1=1 order by order_num ASC 
+2018-07-01 16:58:49.462 DEBUG org.hibernate.SQL Line:92  - select * from sys_role_permission s where s.role_id=? 
+2018-07-01 16:59:13.908 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 16:59:14.169 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where 1=1 order by order_num ASC 
+2018-07-01 16:59:14.307 DEBUG org.hibernate.SQL Line:92  - select * from sys_role_permission s where s.role_id=? 
+2018-07-01 16:59:24.292 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 16:59:24.361 DEBUG org.hibernate.SQL Line:92  - update sys_role set create_date=?, description=?, name=?, order_num=?, update_date=? where id=?
+2018-07-01 16:59:24.420 DEBUG org.hibernate.SQL Line:92  - select sysroleper0_.id as id1_25_, sysroleper0_.permission_id as permissi2_25_, sysroleper0_.role_id as role_id3_25_ from sys_role_permission sysroleper0_ where sysroleper0_.role_id=?
+2018-07-01 16:59:24.488 DEBUG org.hibernate.SQL Line:92  - delete from sys_role_permission where id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=?
+2018-07-01 16:59:24.542 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:59:24.556 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 16:59:24.615 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_role t where 1=1  order by order_num asc limit ?, ? 
+2018-07-01 16:59:24.628 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_role t where 1=1  order by order_num asc 
+2018-07-01 16:59:26.133 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 16:59:26.442 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where 1=1 order by order_num ASC 
+2018-07-01 16:59:26.587 DEBUG org.hibernate.SQL Line:92  - select * from sys_role_permission s where s.role_id=? 
+2018-07-01 16:59:32.599 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_user t where 1=1  and t.user_name like ?  limit ?, ? 
+2018-07-01 16:59:32.613 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_user t where 1=1  and t.user_name like ? 
+2018-07-01 16:59:52.128 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_, sysrole0_.create_date as create_d2_24_, sysrole0_.description as descript3_24_, sysrole0_.name as name4_24_, sysrole0_.order_num as order_nu5_24_, sysrole0_.update_date as update_d6_24_ from sys_role sysrole0_ where 1=1
+2018-07-01 16:59:52.827 DEBUG org.hibernate.SQL Line:92  - select mfworkunit0_.id as id1_22_, mfworkunit0_.creation_time as creation2_22_, mfworkunit0_.p_id as p_id3_22_, mfworkunit0_.type as type4_22_, mfworkunit0_.work_units as work_uni5_22_ from mf_work_units mfworkunit0_
+2018-07-01 17:00:06.101 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_, sysrole0_.create_date as create_d2_24_, sysrole0_.description as descript3_24_, sysrole0_.name as name4_24_, sysrole0_.order_num as order_nu5_24_, sysrole0_.update_date as update_d6_24_ from sys_role sysrole0_ where 1=1
+2018-07-01 17:00:06.375 DEBUG org.hibernate.SQL Line:92  - select mfworkunit0_.id as id1_22_, mfworkunit0_.creation_time as creation2_22_, mfworkunit0_.p_id as p_id3_22_, mfworkunit0_.type as type4_22_, mfworkunit0_.work_units as work_uni5_22_ from mf_work_units mfworkunit0_
+2018-07-01 17:00:09.264 DEBUG org.hibernate.SQL Line:92  - select count(*) as col_0_0_ from sys_user sysuser0_ where sysuser0_.user_name=?
+2018-07-01 17:01:22.367 DEBUG org.hibernate.SQL Line:92  - insert into sys_user (address, attent_count, birthday, create_date, email, fan_count, grade, group_count, image, introduce, labour_union_id, locked, nickname, password, phone, points, pre_login_date, real_name, salt, sex, update_date, user_name, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-07-01 17:01:22.434 DEBUG org.hibernate.SQL Line:92  - insert into sys_user_role (role_id, user_id, id) values (?, ?, ?)
+2018-07-01 17:01:22.494 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_user t where 1=1  and t.user_name like ?  limit ?, ? 
+2018-07-01 17:01:22.508 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_user t where 1=1  and t.user_name like ? 
+2018-07-01 17:01:40.201 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_, sysuser0_.address as address2_26_, sysuser0_.attent_count as attent_c3_26_, sysuser0_.birthday as birthday4_26_, sysuser0_.create_date as create_d5_26_, sysuser0_.email as email6_26_, sysuser0_.fan_count as fan_coun7_26_, sysuser0_.grade as grade8_26_, sysuser0_.group_count as group_co9_26_, sysuser0_.image as image10_26_, sysuser0_.introduce as introdu11_26_, sysuser0_.labour_union_id as labour_12_26_, sysuser0_.locked as locked13_26_, sysuser0_.nickname as nicknam14_26_, sysuser0_.password as passwor15_26_, sysuser0_.phone as phone16_26_, sysuser0_.points as points17_26_, sysuser0_.pre_login_date as pre_log18_26_, sysuser0_.real_name as real_na19_26_, sysuser0_.salt as salt20_26_, sysuser0_.sex as sex21_26_, sysuser0_.update_date as update_22_26_, sysuser0_.user_name as user_na23_26_ from sys_user sysuser0_ where sysuser0_.user_name=?
+2018-07-01 17:01:40.271 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.316 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.357 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.401 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.463 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.505 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.545 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.589 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.631 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.674 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.717 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.758 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.801 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.853 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:01:40.915 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 17:01:40.966 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 17:01:44.925 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_work_units t where 1=1  limit ?, ? 
+2018-07-01 17:01:44.940 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_work_units t where 1=1 
+2018-07-01 17:02:08.494 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_, sysuser0_.address as address2_26_, sysuser0_.attent_count as attent_c3_26_, sysuser0_.birthday as birthday4_26_, sysuser0_.create_date as create_d5_26_, sysuser0_.email as email6_26_, sysuser0_.fan_count as fan_coun7_26_, sysuser0_.grade as grade8_26_, sysuser0_.group_count as group_co9_26_, sysuser0_.image as image10_26_, sysuser0_.introduce as introdu11_26_, sysuser0_.labour_union_id as labour_12_26_, sysuser0_.locked as locked13_26_, sysuser0_.nickname as nicknam14_26_, sysuser0_.password as passwor15_26_, sysuser0_.phone as phone16_26_, sysuser0_.points as points17_26_, sysuser0_.pre_login_date as pre_log18_26_, sysuser0_.real_name as real_na19_26_, sysuser0_.salt as salt20_26_, sysuser0_.sex as sex21_26_, sysuser0_.update_date as update_22_26_, sysuser0_.user_name as user_na23_26_ from sys_user sysuser0_ where sysuser0_.user_name=?
+2018-07-01 17:02:08.554 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:08.604 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:08.666 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:08.709 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:08.772 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:08.817 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:08.886 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:08.929 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:08.971 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:09.015 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:09.059 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:09.114 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:09.165 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:09.207 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:02:09.297 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 17:02:09.344 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 17:02:13.746 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_user t where 1=1  and t.user_name like ?  limit ?, ? 
+2018-07-01 17:02:13.762 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_user t where 1=1  and t.user_name like ? 
+2018-07-01 17:02:50.382 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where p.type=? order by order_num ASC 
+2018-07-01 17:02:50.829 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 17:02:50.849 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.type = 1
+2018-07-01 17:09:44.845 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_0_, sysuser0_.address as address2_26_0_, sysuser0_.attent_count as attent_c3_26_0_, sysuser0_.birthday as birthday4_26_0_, sysuser0_.create_date as create_d5_26_0_, sysuser0_.email as email6_26_0_, sysuser0_.fan_count as fan_coun7_26_0_, sysuser0_.grade as grade8_26_0_, sysuser0_.group_count as group_co9_26_0_, sysuser0_.image as image10_26_0_, sysuser0_.introduce as introdu11_26_0_, sysuser0_.labour_union_id as labour_12_26_0_, sysuser0_.locked as locked13_26_0_, sysuser0_.nickname as nicknam14_26_0_, sysuser0_.password as passwor15_26_0_, sysuser0_.phone as phone16_26_0_, sysuser0_.points as points17_26_0_, sysuser0_.pre_login_date as pre_log18_26_0_, sysuser0_.real_name as real_na19_26_0_, sysuser0_.salt as salt20_26_0_, sysuser0_.sex as sex21_26_0_, sysuser0_.update_date as update_22_26_0_, sysuser0_.user_name as user_na23_26_0_ from sys_user sysuser0_ where sysuser0_.id=?
+2018-07-01 17:09:44.919 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 17:09:44.973 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_, sysrole0_.create_date as create_d2_24_, sysrole0_.description as descript3_24_, sysrole0_.name as name4_24_, sysrole0_.order_num as order_nu5_24_, sysrole0_.update_date as update_d6_24_ from sys_role sysrole0_ where 1=1
+2018-07-01 17:17:58.043 DEBUG org.hibernate.SQL Line:92  -  select distinct t.id,t.create_time,t.huanxin_flag,t.name,t.nickname,t.openid,t.phone,t.sex,t.user_type,i.integral  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1  limit ?, ? 
+2018-07-01 17:17:59.236 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1 
+2018-07-01 17:18:06.312 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 17:18:06.326 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 17:18:09.163 DEBUG org.hibernate.SQL Line:92  -  select distinct t.id,t.create_time,t.huanxin_flag,t.name,t.nickname,t.openid,t.phone,t.sex,t.user_type,i.integral  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1  limit ?, ? 
+2018-07-01 17:18:09.210 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1 
+2018-07-01 17:18:17.191 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_user t where 1=1  and t.user_name like ?  limit ?, ? 
+2018-07-01 17:18:17.206 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_user t where 1=1  and t.user_name like ? 
+2018-07-01 17:18:59.697 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_0_, sysuser0_.address as address2_26_0_, sysuser0_.attent_count as attent_c3_26_0_, sysuser0_.birthday as birthday4_26_0_, sysuser0_.create_date as create_d5_26_0_, sysuser0_.email as email6_26_0_, sysuser0_.fan_count as fan_coun7_26_0_, sysuser0_.grade as grade8_26_0_, sysuser0_.group_count as group_co9_26_0_, sysuser0_.image as image10_26_0_, sysuser0_.introduce as introdu11_26_0_, sysuser0_.labour_union_id as labour_12_26_0_, sysuser0_.locked as locked13_26_0_, sysuser0_.nickname as nicknam14_26_0_, sysuser0_.password as passwor15_26_0_, sysuser0_.phone as phone16_26_0_, sysuser0_.points as points17_26_0_, sysuser0_.pre_login_date as pre_log18_26_0_, sysuser0_.real_name as real_na19_26_0_, sysuser0_.salt as salt20_26_0_, sysuser0_.sex as sex21_26_0_, sysuser0_.update_date as update_22_26_0_, sysuser0_.user_name as user_na23_26_0_ from sys_user sysuser0_ where sysuser0_.id=?
+2018-07-01 17:18:59.776 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 17:18:59.847 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_, sysrole0_.create_date as create_d2_24_, sysrole0_.description as descript3_24_, sysrole0_.name as name4_24_, sysrole0_.order_num as order_nu5_24_, sysrole0_.update_date as update_d6_24_ from sys_role sysrole0_ where 1=1
+2018-07-01 17:21:17.612 DEBUG org.hibernate.SQL Line:92  -  select distinct t.id,t.create_time,t.huanxin_flag,t.name,t.nickname,t.openid,t.phone,t.sex,t.user_type,i.integral  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1  limit ?, ? 
+2018-07-01 17:21:17.664 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1 
+2018-07-01 17:21:41.848 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 17:21:41.864 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 17:27:03.413 DEBUG org.hibernate.SQL Line:92  - insert into mf_invitation_user_data (birth_time, birthplace, education, growing_place, height, idcard, marital_status, nation, phone, political_visage, post_nature, real_name, sex, unit_attribute, user_id, work_unit, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-07-01 17:27:03.432 DEBUG org.hibernate.SQL Line:92  - insert into mf_invitation_user_data (birth_time, birthplace, education, growing_place, height, idcard, marital_status, nation, phone, political_visage, post_nature, real_name, sex, unit_attribute, user_id, work_unit, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-07-01 17:27:03.505 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 17:27:03.519 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 17:27:16.727 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where p.type=? order by order_num ASC 
+2018-07-01 17:27:17.133 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 17:27:17.147 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.type = 1
+2018-07-01 17:27:31.276 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.name like '%受邀%'  and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 17:27:31.291 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.name like '%受邀%'  and t.type = 1
+2018-07-01 17:27:33.835 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where p.type=? order by order_num ASC 
+2018-07-01 17:27:50.995 DEBUG org.hibernate.SQL Line:92  - select count(*) from sys_permission  where name='用户管理' and type!=2 
+2018-07-01 17:28:01.170 DEBUG org.hibernate.SQL Line:92  - select count(*) from sys_permission  where name='用户管理' and type!=2 
+2018-07-01 17:28:20.326 DEBUG org.hibernate.SQL Line:92  - select count(*) from sys_permission  where name='公司员工基本信息' and type!=2 
+2018-07-01 17:28:20.471 DEBUG org.hibernate.SQL Line:92  - select syspermiss0_.id as id1_23_0_, syspermiss0_.available as availabl2_23_0_, syspermiss0_.icon_code as icon_cod3_23_0_, syspermiss0_.is_parent as is_paren4_23_0_, syspermiss0_.name as name5_23_0_, syspermiss0_.open as open6_23_0_, syspermiss0_.order_num as order_nu7_23_0_, syspermiss0_.permission_name as permissi8_23_0_, syspermiss0_.permission_value as permissi9_23_0_, syspermiss0_.pid as pid10_23_0_, syspermiss0_.pname as pname11_23_0_, syspermiss0_.type as type12_23_0_, syspermiss0_.url as url13_23_0_ from sys_permission syspermiss0_ where syspermiss0_.id=?
+2018-07-01 17:28:20.554 DEBUG org.hibernate.SQL Line:92  - update sys_permission set available=?, icon_code=?, is_parent=?, name=?, open=?, order_num=?, permission_name=?, permission_value=?, pid=?, pname=?, type=?, url=? where id=?
+2018-07-01 17:28:20.604 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where p.type=? order by order_num ASC 
+2018-07-01 17:28:20.661 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.name like '%受邀%'  and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 17:28:20.674 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.name like '%受邀%'  and t.type = 1
+2018-07-01 17:28:23.825 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:23.883 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:23.928 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:23.972 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:24.016 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:24.058 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:24.114 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:24.158 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:24.202 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:24.247 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:24.301 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:24.342 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:24.390 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:24.441 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 17:28:24.509 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 17:28:24.555 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 17:28:26.925 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 17:28:26.941 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 17:32:56.946 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 17:32:56.971 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 17:35:52.623 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 17:35:52.647 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:16:15.461 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_, sysuser0_.address as address2_26_, sysuser0_.attent_count as attent_c3_26_, sysuser0_.birthday as birthday4_26_, sysuser0_.create_date as create_d5_26_, sysuser0_.email as email6_26_, sysuser0_.fan_count as fan_coun7_26_, sysuser0_.grade as grade8_26_, sysuser0_.group_count as group_co9_26_, sysuser0_.image as image10_26_, sysuser0_.introduce as introdu11_26_, sysuser0_.labour_union_id as labour_12_26_, sysuser0_.locked as locked13_26_, sysuser0_.nickname as nicknam14_26_, sysuser0_.password as passwor15_26_, sysuser0_.phone as phone16_26_, sysuser0_.points as points17_26_, sysuser0_.pre_login_date as pre_log18_26_, sysuser0_.real_name as real_na19_26_, sysuser0_.salt as salt20_26_, sysuser0_.sex as sex21_26_, sysuser0_.update_date as update_22_26_, sysuser0_.user_name as user_na23_26_ from sys_user sysuser0_ where sysuser0_.user_name=?
+2018-07-01 20:16:15.706 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:15.969 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.027 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.084 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.141 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.197 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.254 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.307 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.361 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.418 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.475 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.529 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.588 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:16.644 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:16:17.322 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 20:16:17.381 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 20:16:22.703 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:16:22.725 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:17:40.242 DEBUG org.hibernate.SQL Line:92  - insert into mf_invitation_user_data (basy_pay, birth_time, birthplace, contract_end_time, contract_start_time, education, end_time, growing_place, height, idcard, is_job, is_leave, marital_status, nation, phone, political_visage, post_nature, real_name, sex, start_time, unit_attribute, user_id, which, which_one, work_unit, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-07-01 20:17:40.327 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:17:40.346 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:28:41.668 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_, sysuser0_.address as address2_26_, sysuser0_.attent_count as attent_c3_26_, sysuser0_.birthday as birthday4_26_, sysuser0_.create_date as create_d5_26_, sysuser0_.email as email6_26_, sysuser0_.fan_count as fan_coun7_26_, sysuser0_.grade as grade8_26_, sysuser0_.group_count as group_co9_26_, sysuser0_.image as image10_26_, sysuser0_.introduce as introdu11_26_, sysuser0_.labour_union_id as labour_12_26_, sysuser0_.locked as locked13_26_, sysuser0_.nickname as nicknam14_26_, sysuser0_.password as passwor15_26_, sysuser0_.phone as phone16_26_, sysuser0_.points as points17_26_, sysuser0_.pre_login_date as pre_log18_26_, sysuser0_.real_name as real_na19_26_, sysuser0_.salt as salt20_26_, sysuser0_.sex as sex21_26_, sysuser0_.update_date as update_22_26_, sysuser0_.user_name as user_na23_26_ from sys_user sysuser0_ where sysuser0_.user_name=?
+2018-07-01 20:28:41.888 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.127 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.181 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.233 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.287 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.338 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.392 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.441 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.488 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.539 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.587 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.635 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.689 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:42.737 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:28:43.469 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 20:28:43.521 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 20:28:52.230 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:28:52.248 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:28:56.477 DEBUG org.hibernate.SQL Line:92  - select mfinvitati0_.id as id1_7_0_, mfinvitati0_.basy_pay as basy_pay2_7_0_, mfinvitati0_.birth_time as birth_ti3_7_0_, mfinvitati0_.birthplace as birthpla4_7_0_, mfinvitati0_.contract_end_time as contract5_7_0_, mfinvitati0_.contract_start_time as contract6_7_0_, mfinvitati0_.education as educatio7_7_0_, mfinvitati0_.end_time as end_time8_7_0_, mfinvitati0_.growing_place as growing_9_7_0_, mfinvitati0_.height as height10_7_0_, mfinvitati0_.idcard as idcard11_7_0_, mfinvitati0_.is_job as is_job12_7_0_, mfinvitati0_.is_leave as is_leav13_7_0_, mfinvitati0_.marital_status as marital14_7_0_, mfinvitati0_.nation as nation15_7_0_, mfinvitati0_.phone as phone16_7_0_, mfinvitati0_.political_visage as politic17_7_0_, mfinvitati0_.post_nature as post_na18_7_0_, mfinvitati0_.real_name as real_na19_7_0_, mfinvitati0_.sex as sex20_7_0_, mfinvitati0_.start_time as start_t21_7_0_, mfinvitati0_.unit_attribute as unit_at22_7_0_, mfinvitati0_.user_id as user_id23_7_0_, mfinvitati0_.which as which24_7_0_, mfinvitati0_.which_one as which_o25_7_0_, mfinvitati0_.work_unit as work_un26_7_0_ from mf_invitation_user_data mfinvitati0_ where mfinvitati0_.id=?
+2018-07-01 20:28:56.604 DEBUG org.hibernate.SQL Line:92  - delete from mf_invitation_user_data where id=?
+2018-07-01 20:28:56.669 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:28:56.684 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:29:03.901 DEBUG org.hibernate.SQL Line:92  - select mfinvitati0_.id as id1_7_0_, mfinvitati0_.basy_pay as basy_pay2_7_0_, mfinvitati0_.birth_time as birth_ti3_7_0_, mfinvitati0_.birthplace as birthpla4_7_0_, mfinvitati0_.contract_end_time as contract5_7_0_, mfinvitati0_.contract_start_time as contract6_7_0_, mfinvitati0_.education as educatio7_7_0_, mfinvitati0_.end_time as end_time8_7_0_, mfinvitati0_.growing_place as growing_9_7_0_, mfinvitati0_.height as height10_7_0_, mfinvitati0_.idcard as idcard11_7_0_, mfinvitati0_.is_job as is_job12_7_0_, mfinvitati0_.is_leave as is_leav13_7_0_, mfinvitati0_.marital_status as marital14_7_0_, mfinvitati0_.nation as nation15_7_0_, mfinvitati0_.phone as phone16_7_0_, mfinvitati0_.political_visage as politic17_7_0_, mfinvitati0_.post_nature as post_na18_7_0_, mfinvitati0_.real_name as real_na19_7_0_, mfinvitati0_.sex as sex20_7_0_, mfinvitati0_.start_time as start_t21_7_0_, mfinvitati0_.unit_attribute as unit_at22_7_0_, mfinvitati0_.user_id as user_id23_7_0_, mfinvitati0_.which as which24_7_0_, mfinvitati0_.which_one as which_o25_7_0_, mfinvitati0_.work_unit as work_un26_7_0_ from mf_invitation_user_data mfinvitati0_ where mfinvitati0_.id=?
+2018-07-01 20:29:03.988 DEBUG org.hibernate.SQL Line:92  - delete from mf_invitation_user_data where id=?
+2018-07-01 20:29:04.055 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:29:04.071 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:29:05.580 DEBUG org.hibernate.SQL Line:92  - select mfinvitati0_.id as id1_7_0_, mfinvitati0_.basy_pay as basy_pay2_7_0_, mfinvitati0_.birth_time as birth_ti3_7_0_, mfinvitati0_.birthplace as birthpla4_7_0_, mfinvitati0_.contract_end_time as contract5_7_0_, mfinvitati0_.contract_start_time as contract6_7_0_, mfinvitati0_.education as educatio7_7_0_, mfinvitati0_.end_time as end_time8_7_0_, mfinvitati0_.growing_place as growing_9_7_0_, mfinvitati0_.height as height10_7_0_, mfinvitati0_.idcard as idcard11_7_0_, mfinvitati0_.is_job as is_job12_7_0_, mfinvitati0_.is_leave as is_leav13_7_0_, mfinvitati0_.marital_status as marital14_7_0_, mfinvitati0_.nation as nation15_7_0_, mfinvitati0_.phone as phone16_7_0_, mfinvitati0_.political_visage as politic17_7_0_, mfinvitati0_.post_nature as post_na18_7_0_, mfinvitati0_.real_name as real_na19_7_0_, mfinvitati0_.sex as sex20_7_0_, mfinvitati0_.start_time as start_t21_7_0_, mfinvitati0_.unit_attribute as unit_at22_7_0_, mfinvitati0_.user_id as user_id23_7_0_, mfinvitati0_.which as which24_7_0_, mfinvitati0_.which_one as which_o25_7_0_, mfinvitati0_.work_unit as work_un26_7_0_ from mf_invitation_user_data mfinvitati0_ where mfinvitati0_.id=?
+2018-07-01 20:29:05.662 DEBUG org.hibernate.SQL Line:92  - delete from mf_invitation_user_data where id=?
+2018-07-01 20:29:05.716 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:29:05.732 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:29:15.195 DEBUG org.hibernate.SQL Line:92  - insert into mf_invitation_user_data (basy_pay, birth_time, birthplace, contract_end_time, contract_start_time, education, end_time, growing_place, height, idcard, is_job, is_leave, marital_status, nation, phone, political_visage, post_nature, real_name, sex, start_time, unit_attribute, user_id, which, which_one, work_unit, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-07-01 20:29:15.276 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:29:15.293 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:46:30.107 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.164 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.218 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.263 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.311 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.364 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.412 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.459 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.505 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.554 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.602 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.649 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.697 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.745 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:46:30.824 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 20:46:30.869 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 20:46:33.734 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:46:33.752 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:53:50.146 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.205 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.252 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.299 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.350 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.395 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.444 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.492 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.538 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.586 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.634 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.682 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.732 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.781 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:53:50.858 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 20:53:50.907 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 20:53:53.417 DEBUG org.hibernate.SQL Line:92  -  select distinct t.id,t.create_time,t.huanxin_flag,t.name,t.nickname,t.openid,t.phone,t.sex,t.user_type,i.integral  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1  limit ?, ? 
+2018-07-01 20:53:53.467 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_user_info t left join mf_activity_integral i on t.id = i.user_id where 1=1 
+2018-07-01 20:53:54.464 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:53:54.479 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:54:32.998 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.050 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.099 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.149 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.194 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.243 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.291 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.338 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.384 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.431 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.478 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.525 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.575 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:33.628 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:54:36.080 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:54:36.095 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:57:16.891 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:16.941 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:16.987 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.034 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.081 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.130 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.177 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.225 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.271 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.318 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.369 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.414 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.464 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.513 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:57:17.584 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 20:57:17.633 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 20:57:19.977 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:57:19.995 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 20:58:48.370 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.419 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.470 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.518 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.566 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.613 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.661 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.708 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.758 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.809 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.859 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.905 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:48.952 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:58:49.005 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 20:59:38.553 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 20:59:38.579 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 21:02:08.307 DEBUG org.hibernate.SQL Line:92  - select mfinvitati0_.id as id1_7_0_, mfinvitati0_.basy_pay as basy_pay2_7_0_, mfinvitati0_.birth_time as birth_ti3_7_0_, mfinvitati0_.birthplace as birthpla4_7_0_, mfinvitati0_.contract_end_time as contract5_7_0_, mfinvitati0_.contract_start_time as contract6_7_0_, mfinvitati0_.education as educatio7_7_0_, mfinvitati0_.end_time as end_time8_7_0_, mfinvitati0_.growing_place as growing_9_7_0_, mfinvitati0_.height as height10_7_0_, mfinvitati0_.idcard as idcard11_7_0_, mfinvitati0_.is_job as is_job12_7_0_, mfinvitati0_.is_leave as is_leav13_7_0_, mfinvitati0_.marital_status as marital14_7_0_, mfinvitati0_.nation as nation15_7_0_, mfinvitati0_.phone as phone16_7_0_, mfinvitati0_.political_visage as politic17_7_0_, mfinvitati0_.post_nature as post_na18_7_0_, mfinvitati0_.real_name as real_na19_7_0_, mfinvitati0_.sex as sex20_7_0_, mfinvitati0_.start_time as start_t21_7_0_, mfinvitati0_.unit_attribute as unit_at22_7_0_, mfinvitati0_.user_id as user_id23_7_0_, mfinvitati0_.which as which24_7_0_, mfinvitati0_.which_one as which_o25_7_0_, mfinvitati0_.work_unit as work_un26_7_0_ from mf_invitation_user_data mfinvitati0_ where mfinvitati0_.id=?
+2018-07-01 21:02:08.411 DEBUG org.hibernate.SQL Line:92  - update mf_invitation_user_data set basy_pay=?, birth_time=?, birthplace=?, contract_end_time=?, contract_start_time=?, education=?, end_time=?, growing_place=?, height=?, idcard=?, is_job=?, is_leave=?, marital_status=?, nation=?, phone=?, political_visage=?, post_nature=?, real_name=?, sex=?, start_time=?, unit_attribute=?, user_id=?, which=?, which_one=?, work_unit=? where id=?
+2018-07-01 21:02:08.489 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 21:02:08.511 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 21:02:14.193 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 21:02:14.209 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 21:11:37.694 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:37.762 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:37.820 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:37.874 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:37.929 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:37.987 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:38.043 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:38.097 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:38.151 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:38.209 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:38.263 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:38.316 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:38.377 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:38.443 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:11:38.523 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 21:11:38.581 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 21:11:40.984 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 21:11:41.002 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
+2018-07-01 21:12:27.482 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where p.type=? order by order_num ASC 
+2018-07-01 21:12:28.439 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 21:12:28.459 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.type = 1
+2018-07-01 21:14:21.513 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where p.type=? order by order_num ASC 
+2018-07-01 21:14:21.939 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 21:14:21.958 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.type = 1
+2018-07-01 21:14:43.603 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where p.type=? order by order_num ASC 
+2018-07-01 21:14:43.661 DEBUG org.hibernate.SQL Line:92  - select syspermiss0_.id as id1_23_0_, syspermiss0_.available as availabl2_23_0_, syspermiss0_.icon_code as icon_cod3_23_0_, syspermiss0_.is_parent as is_paren4_23_0_, syspermiss0_.name as name5_23_0_, syspermiss0_.open as open6_23_0_, syspermiss0_.order_num as order_nu7_23_0_, syspermiss0_.permission_name as permissi8_23_0_, syspermiss0_.permission_value as permissi9_23_0_, syspermiss0_.pid as pid10_23_0_, syspermiss0_.pname as pname11_23_0_, syspermiss0_.type as type12_23_0_, syspermiss0_.url as url13_23_0_ from sys_permission syspermiss0_ where syspermiss0_.id=?
+2018-07-01 21:15:04.301 DEBUG org.hibernate.SQL Line:92  - select count(*) from sys_permission  where name='工资管理' and type!=2 
+2018-07-01 21:16:08.743 DEBUG org.hibernate.SQL Line:92  - select count(*) from sys_permission  where permission_value='108' and type!=2 
+2018-07-01 21:16:25.867 DEBUG org.hibernate.SQL Line:92  - insert into sys_permission (available, icon_code, is_parent, name, open, order_num, permission_name, permission_value, pid, pname, type, url, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-07-01 21:16:25.928 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where p.type=? order by order_num ASC 
+2018-07-01 21:16:25.997 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 21:16:26.014 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.type = 1
+2018-07-01 21:16:30.815 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.pid = '402881196455d03e016455fcc38b0001' and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 21:16:30.833 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.pid = '402881196455d03e016455fcc38b0001' and t.type = 1
+2018-07-01 21:16:33.187 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where p.type=? order by order_num ASC 
+2018-07-01 21:16:40.097 DEBUG org.hibernate.SQL Line:92  - select count(*) from sys_permission  where name='工资条' and type!=2 
+2018-07-01 21:16:53.695 DEBUG org.hibernate.SQL Line:92  - select count(*) from sys_permission  where url='pay/index' and type!=2 
+2018-07-01 21:16:57.522 DEBUG org.hibernate.SQL Line:92  - select count(*) from sys_permission  where permission_name='109' and type!=2 
+2018-07-01 21:17:00.279 DEBUG org.hibernate.SQL Line:92  - select count(*) from sys_permission  where permission_value='109' and type!=2 
+2018-07-01 21:17:19.180 DEBUG org.hibernate.SQL Line:92  - insert into sys_permission (available, icon_code, is_parent, name, open, order_num, permission_name, permission_value, pid, pname, type, url, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2018-07-01 21:17:19.241 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where p.type=? order by order_num ASC 
+2018-07-01 21:17:19.316 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_permission t where 1=1  and t.pid = '402881196455d03e016455fcc38b0001' and t.type = 1 order by order_num ASC limit ?, ? 
+2018-07-01 21:17:19.333 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_permission t where 1=1  and t.pid = '402881196455d03e016455fcc38b0001' and t.type = 1
+2018-07-01 21:17:24.090 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.144 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.199 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.255 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.309 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.367 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.420 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.475 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.530 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.584 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.636 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.691 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.750 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.806 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.860 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:24.942 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 21:17:24.997 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 21:17:30.815 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_role t where 1=1  order by order_num asc limit ?, ? 
+2018-07-01 21:17:30.832 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_role t where 1=1  order by order_num asc 
+2018-07-01 21:17:33.529 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 21:17:34.196 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where 1=1 order by order_num ASC 
+2018-07-01 21:17:34.352 DEBUG org.hibernate.SQL Line:92  - select * from sys_role_permission s where s.role_id=? 
+2018-07-01 21:17:48.146 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 21:17:48.233 DEBUG org.hibernate.SQL Line:92  - update sys_role set create_date=?, description=?, name=?, order_num=?, update_date=? where id=?
+2018-07-01 21:17:48.336 DEBUG org.hibernate.SQL Line:92  - select sysroleper0_.id as id1_25_, sysroleper0_.permission_id as permissi2_25_, sysroleper0_.role_id as role_id3_25_ from sys_role_permission sysroleper0_ where sysroleper0_.role_id=?
+2018-07-01 21:17:48.444 DEBUG org.hibernate.SQL Line:92  - delete from sys_role_permission where id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=? or id=?
+2018-07-01 21:17:48.514 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.530 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.547 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.563 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.578 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.595 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.612 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.628 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.644 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.659 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.676 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.693 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.709 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.726 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.741 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.758 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.773 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.789 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.805 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.820 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.836 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.854 DEBUG org.hibernate.SQL Line:92  - insert into sys_role_permission (permission_id, role_id, id) values (?, ?, ?)
+2018-07-01 21:17:48.922 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_role t where 1=1  order by order_num asc limit ?, ? 
+2018-07-01 21:17:48.938 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_role t where 1=1  order by order_num asc 
+2018-07-01 21:17:50.617 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:50.670 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:50.724 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:50.782 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:50.837 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:50.893 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:50.948 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:51.001 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:51.054 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:51.108 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:51.160 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:51.216 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:51.269 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:51.326 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:51.381 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:17:56.550 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from sys_role t where 1=1  order by order_num asc limit ?, ? 
+2018-07-01 21:17:56.567 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from sys_role t where 1=1  order by order_num asc 
+2018-07-01 21:17:58.646 DEBUG org.hibernate.SQL Line:92  - select sysrole0_.id as id1_24_0_, sysrole0_.create_date as create_d2_24_0_, sysrole0_.description as descript3_24_0_, sysrole0_.name as name4_24_0_, sysrole0_.order_num as order_nu5_24_0_, sysrole0_.update_date as update_d6_24_0_ from sys_role sysrole0_ where sysrole0_.id=?
+2018-07-01 21:17:58.910 DEBUG org.hibernate.SQL Line:92  - select * from sys_permission p where 1=1 order by order_num ASC 
+2018-07-01 21:17:59.045 DEBUG org.hibernate.SQL Line:92  - select * from sys_role_permission s where s.role_id=? 
+2018-07-01 21:18:19.160 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.216 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.273 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.330 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.386 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.445 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.499 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.555 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.607 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.660 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.713 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.768 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.820 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.878 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:19.936 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:37.509 DEBUG org.hibernate.SQL Line:92  - select sysuser0_.id as id1_26_, sysuser0_.address as address2_26_, sysuser0_.attent_count as attent_c3_26_, sysuser0_.birthday as birthday4_26_, sysuser0_.create_date as create_d5_26_, sysuser0_.email as email6_26_, sysuser0_.fan_count as fan_coun7_26_, sysuser0_.grade as grade8_26_, sysuser0_.group_count as group_co9_26_, sysuser0_.image as image10_26_, sysuser0_.introduce as introdu11_26_, sysuser0_.labour_union_id as labour_12_26_, sysuser0_.locked as locked13_26_, sysuser0_.nickname as nicknam14_26_, sysuser0_.password as passwor15_26_, sysuser0_.phone as phone16_26_, sysuser0_.points as points17_26_, sysuser0_.pre_login_date as pre_log18_26_, sysuser0_.real_name as real_na19_26_, sysuser0_.salt as salt20_26_, sysuser0_.sex as sex21_26_, sysuser0_.update_date as update_22_26_, sysuser0_.user_name as user_na23_26_ from sys_user sysuser0_ where sysuser0_.user_name=?
+2018-07-01 21:18:37.585 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:37.640 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:37.694 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:37.747 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:37.801 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:37.857 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:37.910 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:37.966 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:38.020 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:38.074 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:38.127 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:38.180 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:38.235 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:38.291 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:38.348 DEBUG org.hibernate.SQL Line:92  - select *from sys_permission where pid=?  order by order_num ASC 
+2018-07-01 21:18:38.422 DEBUG org.hibernate.SQL Line:92  -  select r.* from sys_user_role ur left join sys_role r on ur.role_id=r.id where ur.user_id=? 
+2018-07-01 21:18:38.478 DEBUG org.hibernate.SQL Line:92  - select p.* from sys_permission p LEFT JOIN sys_role_permission rp on rp.permission_id=p.id where rp.role_id=? 
+2018-07-01 21:18:48.943 DEBUG org.hibernate.SQL Line:92  -  select distinct t.*  from mf_invitation_user_data t where 1=1  limit ?, ? 
+2018-07-01 21:18:48.960 DEBUG org.hibernate.SQL Line:92  -  select count(1)  from mf_invitation_user_data t where 1=1 
