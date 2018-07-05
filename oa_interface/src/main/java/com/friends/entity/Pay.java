@@ -79,7 +79,7 @@ public class Pay {
 	
 	//公积金
 		private BigDecimal accumulationFund;
-//发工资时间--===============
+//发工资时间--8888
 		private Date payrollTime;
 	
 	public Date getPayrollTime() {
