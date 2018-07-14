@@ -67,6 +67,11 @@ public class PayController {
 		return new ModelAndView("pay/payIndex");
 	}
 
+	@RequestMapping(value = "my")
+	public ModelAndView mypage() {
+		return new ModelAndView("pay/mypay");
+	}
+	
 	// 单个新增
 	@RequestMapping(value = "add")
 	@ResponseBody
@@ -262,10 +267,55 @@ public class PayController {
 		String[] atterNames = { "username","account", "payrollTime","attendance", "actual", "absenteeism","wages","payWages","realWages","firstAmount","secondAmount","socialSecurity","accumulationFund","bankCardNumber","reimbursement","achievements","withholding","regular","reason"
 		};
 
-		List<Pay> invitationUserDataList = payService.queryByParam("","",2/*pay,username,regular*/);
+		List<Pay> invitationUserDataList = payService.queryByParam("","","",2/*pay,username,regular*/);
 
 		XSSFWorkbook book = new XSSFWorkbook();
 		XSSFSheet sheet = book.createSheet("工资模板");
+		for (int i = 0; i < 15; i++) {
+			sheet.setColumnWidth(i, 6000);
+		}
+		ExcelUtil.appendRowToSheet(sheet, colunmNames, true);
+		if(null != invitationUserDataList && invitationUserDataList.size() > 0){
+			for(Pay invitationUserData : invitationUserDataList){
+				ExcelUtil.appendRowObjectToSheetSelective(sheet, invitationUserData, atterNames);
+			}
+		}
+		response.setCharacterEncoding("UTF-8");
+		response.addHeader("Content-type", " application/octet-stream");
+		String fileName = new String(("全员工资").getBytes(), "ISO8859_1");
+		response.addHeader("Content-Disposition", new StringBuffer().append("attachment;filename=")
+				.append(fileName + TimeHelper.dateToStrShort(new Date()) + ".xlsx").toString());
+
+		ServletOutputStream outputStream = response.getOutputStream();
+		book.write(outputStream);
+		outputStream.close();
+
+	}
+
+
+	/**
+	 * 功能描述: 下载受邀用户资料
+	 * @param: [idcard, phone, status]
+	 * @return: void
+	 * @auther: wenxun
+	 * @date: 2018/4/10 15:09
+	 */
+	@RequestMapping(value = "/downloadUserDataMy",method = RequestMethod.POST)
+	public void downloadUserDataMy(/*String pay,String username,int regular ,*/HttpServletResponse response)throws Exception{
+		Session session = SecurityUtils.getSubject().getSession();
+		SysUser userinfo = (SysUser) session.getAttribute("sysUser");
+		if (userinfo == null) {
+			return ;
+		}
+		String[] colunmNames = {"姓名","账号","发工资时间","应出勤天数","实际出勤天数","缺勤天数","工资","应付工资","实际工资","第一次发金额","第二次罚金额","社保","公积金","银行卡号","报销","绩效","扣发","转正1转0没转","扣发原因"
+		};
+		String[] atterNames = { "username","account", "payrollTime","attendance", "actual", "absenteeism","wages","payWages","realWages","firstAmount","secondAmount","socialSecurity","accumulationFund","bankCardNumber","reimbursement","achievements","withholding","regular","reason"
+		};
+
+		List<Pay> invitationUserDataList = payService.queryByParam("",userinfo.getUserName(),"",2/*pay,username,regular*/);
+
+		XSSFWorkbook book = new XSSFWorkbook();
+		XSSFSheet sheet = book.createSheet(userinfo.getUserName()+"的工资");
 		for (int i = 0; i < 15; i++) {
 			sheet.setColumnWidth(i, 6000);
 		}
@@ -287,7 +337,9 @@ public class PayController {
 
 	}
 
-
+	
+	
+	
 	// 导入
 	@RequestMapping(value = "import")
 	@ResponseBody

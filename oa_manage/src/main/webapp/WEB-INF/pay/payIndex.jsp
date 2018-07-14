@@ -11,7 +11,7 @@
 	<style>
 	  body{margin: 10px;}
 	  .demo-carousel{height: 200px; line-height: 200px; text-align: center;}
-	  .layui-table-body.layui-table-main{height:508.99px;}
+	/*  .layui-table-body.layui-table-main{height:508.99px;}*/
 	  .layui-table-view .layui-table td, .layui-table-view .layui-table th{padding:10px 0;}
 	  .layui-input-block .zoo-item .zoo-img{background-size: 100% 100%;}
 	</style>
@@ -66,7 +66,7 @@
 	<blockquote class="layui-elem-quote">
 		<button type="button" class="layui-btn layui-btn-warm" id="downLoadTemplateBtn">下载模板</button>
 		<button type="button" class="layui-btn layui-btn-normal" id="import">导入数据</button>
-		<button type="button" class="layui-btn " id="downLoadBtn">下载用户资料表格</button>
+		<button type="button" class="layui-btn " id="downLoadBtn">下载员工工资excel表格</button>
 
 	</blockquote>
 </form>
@@ -82,7 +82,7 @@
 		<div class="layui-form-item" pane>
 			<label class="layui-form-label">姓名:</label>
 			<div class="layui-input-block">
-				<input type="text" id="realName" autocomplete="off" class="layui-input" />
+				<input type="text" id="username" readyonly autocomplete="off" class="layui-input" />
 			</div>
 		</div>
 
@@ -91,17 +91,103 @@
 		<div class="layui-form-item" pane>
 			<label class="layui-form-label">发工资时间:</label>
 			<div class="layui-input-block">
-				<input type="text" id="date1" autocomplete="off" class="layui-input" />
+				<input type="text" id="payrollTime" autocomplete="off" class="layui-input" />
 			</div>
 		</div>
-
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">应出勤天数:</label>
+			<div class="layui-input-block">
+				<input type="text" id="actual" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">缺勤天数:</label>
+			<div class="layui-input-block">
+				<input type="text" id="absenteeism" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+		
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">工资:</label>
+			<div class="layui-input-block">
+				<input type="text" id="wages" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">应付工资:</label>
+			<div class="layui-input-block">
+				<input type="text" id="payWages" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">实际工资:</label>
+			<div class="layui-input-block">
+				<input type="text" id="realWages" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">第一次发金额:</label>
+			<div class="layui-input-block">
+				<input type="text" id="firstAmount" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">第二次发金额:</label>
+			<div class="layui-input-block">
+				<input type="text" id="secondAmount" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">报销:</label>
+			<div class="layui-input-block">
+				<input type="text" id="reimbursement" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
 		<div class="layui-form-item" pane>
 			<label class="layui-form-label">银行卡号:</label>
 			<div class="layui-input-block">
-				<input type="text" id="growingPlace" autocomplete="off" class="layui-input" />
+				<input type="text" id="bankCardNumber" autocomplete="off" class="layui-input" />
 			</div>
 		</div>
-
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">绩效:</label>
+			<div class="layui-input-block">
+				<input type="text" id="achievements" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">扣发:</label>
+			<div class="layui-input-block">
+				<input type="text" id="withholding" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">转正:</label>
+			<div class="layui-input-block">
+				
+				<input type="radio" name="regular" value="0" title="试用期"> 
+				<input type="radio" name="regular" value="1" title="已转正">
+			</div>
+		</div>
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">扣发原因:</label>
+			<div class="layui-input-block">
+				<input type="text" id="reason" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">社保:</label>
+			<div class="layui-input-block">
+				<input type="text" id="socialSecurity" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+		<div class="layui-form-item" pane>
+			<label class="layui-form-label">公积金:</label>
+			<div class="layui-input-block">
+				<input type="text" id="accumulationFund" autocomplete="off" class="layui-input" />
+			</div>
+		</div>
+	
 <!-- 		<div class="layui-form-item" pane> -->
 <!-- 			<label class="layui-form-label">学历:</label> -->
 <!-- 			<div class="layui-input-block"> -->
@@ -270,7 +356,11 @@
 	<input type="hidden" name="username" id="username2" />
 	<input type="hidden" name="regular" id="regular2"/>
 </form>
+<script id="regularDemo" type="text/html">
 
+      <input type="checkbox" name=""  {{d.regular=='1'?'checked':''}} id="typeInput" lay-skin="switch" lay-text="是|否" lay-filter="widthDraw" value="0">
+   
+</script>
 <script src="${basePath }/layui-v2.1.4/layui/jquery-2.1.1.min.js" type="text/javascript"></script>
 <script src="${basePath }/layui-v2.1.4/layui/zoomove.min.js" type="text/javascript"></script>   
 <script src="${basePath }/layui-v2.1.4/layui/layui.js?t=1506699022911"></script>
@@ -319,7 +409,7 @@ layui.use(['layedit', 'jquery','laydate', 'laypage', 'layer','form', 'table', 'c
  	function queryDynamic(){	
 	table.render({
 		  elem: '#dateTable' 		//指定原始表格元素选择器（推荐id选择器）
-		  ,height: 590 		 		//容器高度
+		 // ,height: 590 		 		//容器高度
 		  ,page:true 		 		//开启分页 
 		  ,even: true 				//开启隔行背景
 		  ,method:'post'
@@ -343,23 +433,24 @@ layui.use(['layedit', 'jquery','laydate', 'laypage', 'layer','form', 'table', 'c
 	 	  ,cols:[[
 				{field: 'username', title: '姓名', width: 180, align:'center'}
 			   ,{field: 'attendance', title: '应出勤天数', width: 100,align:'center'}
-			   ,{field: 'actual', title: '实际出勤天数', width: 100, align:'center'}
+			   ,{field: 'actual', title: '实际出勤天数', width: 130, align:'center'}
 			   ,{field: 'absenteeism', title: '缺勤天数', width: 100, align:'center'}
 			   ,{field: 'wages', title: '工资', width: 100, align:'center'}
 			   ,{field: 'payWages', title: '应付工资', width: 100, align:'center'}
 			   ,{field: 'realWages', title: '实际工资', width: 100, align:'center'}
-			   ,{field: 'firstAmount', title: '第一次发金额', width: 100, align:'center'}
-			   ,{field: 'secondAmount', title: '第二次发金额', width: 100, align:'center'}
+			   ,{field: 'firstAmount', title: '第一次发金额', width: 130, align:'center'}
+			   ,{field: 'secondAmount', title: '第二次发金额', width: 130, align:'center'}
 			   ,{field: 'reimbursement', title: '报销', width: 100, align:'center'}
-			   ,{field: 'bankCardNumber', title: '银行卡号', width: 80, align:'center'}
+			   ,{field: 'bankCardNumber', title: '银行卡号', width: 130, align:'center'}
 			   ,{field: 'achievements', title: '绩效', width: 80, align:'center'}
+			   
 		       ,{field: 'withholding', title: '扣发', width: 120, align:'center' }
-		       ,{field: 'regular', title: '转正', width: 120, align:'center' } //1转0没转
+		      
 		       ,{field: 'reason', title: '扣发原因', width: 120, align:'center' }
 		       ,{field: 'socialSecurity', title: '社保', width: 120, align:'center' }
 		       ,{field: 'accumulationFund', title: '公积金', width: 120, align:'center' }
 		       ,{field: 'payrollTime', title: '发工资时间', width: 120, align:'center' }
-		      
+		       ,{field: 'regular', title: '转正', width: 120, align:'center' ,templet:"#regularDemo"} //1转0没转
 			   ,{fixed: 'right', width:120, align:'center',title:'操作',toolbar:'#barDemo'}
 	 		    ]]
   		  // 数据渲染完的回调   无论是异步请求数据，还是直接赋值数据，都会触发该回调.
@@ -399,46 +490,39 @@ layui.use(['layedit', 'jquery','laydate', 'laypage', 'layer','form', 'table', 'c
 		,layEvent = obj.event; 		//获得 lay-event 对应的值
 		if(layEvent === 'edit'){
 			//给详情页面赋值
-			$('#realName').val(data.realName);
+			$('#username').val(data.username);
 			
-			$('#growingPlace').val(data.growingPlace);
+			$('#payrollTime').val(data.payrollTime);
 
-			$("#education").val(data.education);
-			$('#height').val(data.height);
-			$("#idcard_2").val(data.idcard);
-			$("#phone").val(data.phone);
+			
+			$("#actual").val(data.actual);
+			$('#absenteeism').val(data.absenteeism);
+			$("#wages").val(data.wages);
+			$("#payWages").val(data.payWages);
+			$("#realWages").val(data.realWages);
+			$("#firstAmount").val(data.firstAmount);
+			$("#secondAmount").val(data.secondAmount);
+			$("#reimbursement").val(data.reimbursement);
+			$("#bankCardNumber").val(data.bankCardNumber);
+			$("#achievements").val(data.achievements);
+			$("#withholding").val(data.withholding);
+			
+			$("#reason").val(data.reason);
+			$("#socialSecurity").val(data.socialSecurity);
+			$("#payrollTime").val(data.payrollTime);
 
-			if(data.sex == 1){
-                $("input[name='sex'][value=1]").prop("checked",true);
+			if(data.regular == 1){
+                $("input[name='regular'][value=1]").prop("checked",true);
 			}else{
-                $("input[name='sex'][value=2]").prop("checked",true);
+                $("input[name='regular'][value=0]").prop("checked",true);
 			}
-			$("#nation").val(data.nation);						//民族
-            $('#face').val(data.politicalVisage);  			//政治面貌
-			$("#birthplace").val(data.birthplace);			//籍贯
-			$("#workUnit").val(data.workUnit); 				//工作单位
-			$("#maritalStatus").val(data.maritalStatus);
-			$("#unitAttribute").val(data.unitAttribute);		//单位属性
-			$("#postNature").val(data.postNature);			//岗位性质
-			$("#startTime").val(data.startTime);
-			$("#endTime").val(data.endTime);
-			$("#contractStartTime").val(data.contractStartTime);
-			$("#contractEndTime").val(data.contractEndTime);
-			$("#whichOne").val(data.whichOne);
-			$("#isJob").val(data.isJob);
-			//$("#isLeave").val(data.isLeave);
-			if(data.isLeave == 1){
-                $("input[name='isLeave'][value=1]").prop("checked",true);
-			}else{
-                $("input[name='isLeave'][value=0]").prop("checked",true);
-			}
-			$("#basyPay").val(data.basyPay);
+			//$("#basyPay").val(data.basyPay);
 			form.render();
             // 打开详情页面
             layer.open({
                 type: 1
                 ,skin: 'demo-class'
-                ,title: '认证信息详情'
+                ,title: '工资详情'
                 ,area: ['800px', '400px']
                 ,offset: '100px' 			//只定义top坐标，水平保持居中
                 ,shade:['0.3','#000']
@@ -447,24 +531,7 @@ layui.use(['layedit', 'jquery','laydate', 'laypage', 'layer','form', 'table', 'c
                 ,btn: ['确认','取消']
                 ,yes: function(index,layero){
 					// 单位属性  岗位性质   不能为空
-                    var workUnit = $("#s3").val();
-                    var postNature = $("#s4").val();
-					if(workUnit == "请选择"){
-                        layer.msg('单位属性不能为空。', {icon: 2});
-                        return false;
-					}
-                    $.ajax({
-                        type:"POST",
-                        dataType: 'json',
-                        url:js_path+'/pay/update',
-                        data:{'id':data.id,'json':JSON.stringify(getEntity())},
-                        success: function(data) {
-                            if(data.code == 200){
-                                layer.msg('修改成功!', {icon: 6});
-                                queryDynamic();
-							}
-                        }
-                    });
+                  
                     layer.closeAll();
                 }
             });
@@ -564,8 +631,8 @@ layui.use(['layedit', 'jquery','laydate', 'laypage', 'layer','form', 'table', 'c
 		invitationUserVo.pageSize=10;
 		// 认证表，默认查询待审核状态的
 		t.username=$.trim($("#query_username").val());
-		t.bankCardNumber=$.trim($("query_#bankCardNumber").val());
-		t.queryDate = $.trim($("#query_payrollTime").val());
+		t.bankCardNumber=$.trim($("#query_bankCardNumber").val());
+		invitationUserVo.queryDate = $.trim($("#query_payrollTime").val());
 		invitationUserVo.t=t;
 		return JSON.stringify(invitationUserVo);
 	}

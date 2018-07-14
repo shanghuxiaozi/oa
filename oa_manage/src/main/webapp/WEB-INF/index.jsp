@@ -7,7 +7,7 @@
     <meta name="renderer" content="webkit" />
 	<meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=7;IE=EDGE" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>工会交友</title>
+    <title>义合信达OA系统</title>
     <link rel="stylesheet" href="${basePath }/static/frame/layui/css/layui.css" />
     <link rel="stylesheet" href="${basePath }/static/css/style.css" />
 </head>
