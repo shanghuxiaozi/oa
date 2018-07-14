@@ -25,7 +25,7 @@ public interface PayService  {
 
 
 	// 根据各参数 查询受邀用户
-	public List<Pay> queryByParam(String pay,String username,int regular);
+	public List<Pay> queryByParam(String pay, String account,String username,int regular);
 
 
 

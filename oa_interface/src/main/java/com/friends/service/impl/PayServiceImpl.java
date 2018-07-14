@@ -38,11 +38,14 @@ public class PayServiceImpl extends BaseService<PayDao, Pay> implements PayServi
 		if(pay != null && StringUtils.isNotEmpty(pay.getBankCardNumber())){
 			sqlCommonBody.append(" and bank_card_number=:bankCardNumber ");
 		}
-		if(pay != null && StringUtils.isNotEmpty(pay.getUsername())){
-			sqlCommonBody.append(" and username=:username ");
+		if(pay != null && StringUtils.isNotEmpty(pay.getAccount())){
+			sqlCommonBody.append(" and account like :account ");
 		}
-		if(pay != null &&payDynamicQueryVo.getQueryDate()!=null){
-			sqlCommonBody.append(" and payroll_time like :payrollTime ");
+		if(pay != null && StringUtils.isNotEmpty(pay.getUsername())){
+			sqlCommonBody.append(" and username like:username ");
+		}
+		if(pay != null &&StringUtils.isNotEmpty(payDynamicQueryVo.getQueryDate())){
+			sqlCommonBody.append(" and DATE_FORMAT(payroll_time ,'%Y-%m-%d') like:payrollTime ");
 		}
 		
 		String sqlDataQuery = " select distinct t.* " + sqlCommonBody.toString() + " limit :from, :to ";
@@ -54,16 +57,20 @@ public class PayServiceImpl extends BaseService<PayDao, Pay> implements PayServi
 		dataQuery.setParameter("to", pageSize);
 		
 		if(pay != null && StringUtils.isNotEmpty(pay.getBankCardNumber())){
-			dataQuery.setParameter("bank_card_number", pay.getBankCardNumber());
-			countQuery.setParameter("bank_card_number", pay.getBankCardNumber());
+			dataQuery.setParameter("bankCardNumber", pay.getBankCardNumber());
+			countQuery.setParameter("bankCardNumber", pay.getBankCardNumber());
 		}
 		if(pay != null && StringUtils.isNotEmpty(pay.getUsername())){
-			dataQuery.setParameter("username", pay.getUsername());
-			countQuery.setParameter("username", pay.getUsername());
+			dataQuery.setParameter("username", "%" +pay.getUsername()+ "%");
+			countQuery.setParameter("username", "%" +pay.getUsername()+ "%");
 		}
-		if(pay != null &&payDynamicQueryVo.getQueryDate()!=null){
-			dataQuery.setParameter("payroll_time", "%" +payDynamicQueryVo.getQueryDate() + "%");
-			countQuery.setParameter("payroll_time","%" + payDynamicQueryVo.getQueryDate() + "%");
+		if(pay != null &&StringUtils.isNotEmpty(payDynamicQueryVo.getQueryDate())){
+			dataQuery.setParameter("payrollTime", "%" +payDynamicQueryVo.getQueryDate() + "%");
+			countQuery.setParameter("payrollTime","%" + payDynamicQueryVo.getQueryDate() + "%");
+		}
+		if(pay != null && StringUtils.isNotEmpty(pay.getAccount())){
+			dataQuery.setParameter("account", "%" +pay.getAccount() + "%");
+			countQuery.setParameter("account","%" + pay.getAccount() + "%");
 		}
 		
 		List<Pay> list = dataQuery.getResultList();
@@ -94,13 +101,17 @@ public class PayServiceImpl extends BaseService<PayDao, Pay> implements PayServi
 
 
 	@Override
-	public List<Pay> queryByParam(String pay, String username, int regular) {
+	public List<Pay> queryByParam(String pay, String account,String username, int regular) {
 		StringBuilder sqlCommonBody = new StringBuilder();
 		sqlCommonBody.append(" from pay t where 1=1 ");
 		// 
 		if(null!=pay&&StringUtils.isNoneEmpty(pay)){
 			sqlCommonBody.append(" and pay=:pays ");
 		}
+		if(account != null && StringUtils.isNotEmpty(account)){
+			sqlCommonBody.append(" and account like :account ");
+		}
+		
 		// 
 		if(null!=username&&StringUtils.isNoneEmpty(username)){
 			sqlCommonBody.append(" and username=:usernames ");
@@ -112,7 +123,7 @@ public class PayServiceImpl extends BaseService<PayDao, Pay> implements PayServi
 		}
 		
 		String sqlDataQuery = " select distinct t.* " + sqlCommonBody.toString();
-		Query dataQuery = em.createNativeQuery(sqlDataQuery, MfInvitationUserData.class);
+		Query dataQuery = em.createNativeQuery(sqlDataQuery, Pay.class);
 		if(StringUtils.isNoneEmpty(pay)){
 			dataQuery.setParameter("pays", pay);
 		}
@@ -123,7 +134,9 @@ public class PayServiceImpl extends BaseService<PayDao, Pay> implements PayServi
 		if( regular ==0 || regular==1){
 			dataQuery.setParameter("regulars", regular);
 		}
-	
+		if(account != null && StringUtils.isNotEmpty(account)){
+			dataQuery.setParameter("account", "%" + account + "%");
+		}
 		List<Pay> list = dataQuery.getResultList();
 		return list;
 	}
